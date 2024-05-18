@@ -4,9 +4,18 @@
   <title>Astronauts in Space</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-<h1>Who is in Space? 🛰️</h1>
-<p>Number of astronaughts currently in space: <%= (data['number']) %></p>
+<body class="astro-page">
+<header>
+<h1>RPF software engineer apprentice challenge 🚀</h1>
+<nav>
+<ul>
+  <li><a href='/'>Homepage</a></li>
+  <li><a href='position'>Where is the ISS?</a></li>
+  <li><a href='astros'>Who is in space right now?</a></li>
+</ul>
+</header>
+<h2>Who is in Space? 🔭</h2>
+<p>Number of astronauts currently in space:<strong> <%= (data['number']) %></p></strong>
 <table>
 <thead>
       <tr>

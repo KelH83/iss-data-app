@@ -4,11 +4,22 @@
   <title>ISS position</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-<h1>Where is the ISS? 🛰️</h1>
+<body class="position-page">
+<header>
+<h1>RPF software engineer apprentice challenge 🚀</h1>
+<nav>
+<ul>
+  <li><a href='/'>Homepage</a></li>
+  <li><a href='position'>Where is the ISS?</a></li>
+  <li><a href='astros'>Who is in space right now?</a></li>
+</ul>
+</header>
+<section class="iss-data">
+<h2>Where is the ISS? 🛰️</h2>
 <!-- TODO add in actual position here -->
 <p>Latitude: <%= (data['iss_position']['latitude']) %></p>
 <p>Longitude: <%= (data['iss_position']['longitude']) %>
-<p>This observation was made at <%= Time.at(data['timestamp']) %>.</p>
+<p>This observation was made at: <%= Time.at(data['timestamp']) %>.</p>
+</section>
 </body>
 </html>

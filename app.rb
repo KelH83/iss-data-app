@@ -21,8 +21,6 @@ end
 
 get '/astros' do
   astros = OpenNotify.astros
-  # content_type :json
-  # astros.to_json
 
  erb :astros, locals: { data: astros }
   
