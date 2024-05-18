@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Astronauts in Space</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<h1>Who is in Space? 🛰️</h1>
+<p>Number of astronaughts currently in space: <%= (data['number']) %></p>
+<table>
+<thead>
+      <tr>
+        <th>Name</th>
+        <th>Craft</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data['people'].each do |astro| %>
+        <tr>
+          <td><%= astro['name'] %></td>
+          <td><%= astro['craft'] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>
+ </body>
+</html>

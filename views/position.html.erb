@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ISS position</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
 <h1>Where is the ISS? 🛰️</h1>
 <!-- TODO add in actual position here -->
+<p>Latitude: <%= (data['iss_position']['latitude']) %></p>
+<p>Longitude: <%= (data['iss_position']['longitude']) %>
 <p>This observation was made at <%= Time.at(data['timestamp']) %>.</p>
+</body>
+</html>
